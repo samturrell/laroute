@@ -1,14 +1,14 @@
 {
-    "name" : "samturrell/laravel-laroute",
+    "name" : "samturrell/laroute",
     "description" : "Extend aaronlord/laroute package.",
-    "homepage" : "https://github.com/AXN-Informatique/laravel-laroute",
+    "homepage" : "https://github.com/samturrell/laroute",
     "support" : {
-        "issues" : "https://github.com/AXN-Informatique/laravel-laroute/issues"
+        "issues" : "https://github.com/samturrell/laroute/issues"
     },
     "authors" : [
         {
             "name" : "Aaron Lord",
-            "email" : "developpement@axn.fr"
+            "email" : "hello@aaronlord.is"
         },
         {
             "name" : "AXN Informatique",
