@@ -99,28 +99,6 @@
             }
         };
 
-        var getLinkAttributes = function(attributes) {
-            if ( ! attributes) {
-                return '';
-            }
-
-            var attrs = [];
-            for (var key in attributes) {
-                if (attributes.hasOwnProperty(key)) {
-                    attrs.push(key + '="' + attributes[key] + '"');
-                }
-            }
-
-            return attrs.join(' ');
-        };
-
-        var getHtmlLink = function (url, title, attributes) {
-            title      = title || url;
-            attributes = getLinkAttributes(attributes);
-
-            return '<a href="' + url + '" ' + attributes + '>' + title + '</a>';
-        };
-
         return {
             // Generate a url for a given named route.
             // $NAMESPACE$.route('routeName', [params = {}])
@@ -134,15 +112,6 @@
                 parameters = parameters || {};
 
                 return routes.route(route, parameters);
-            },
-
-
-            // Generate a html link to the given route.
-            // $NAMESPACE$.link_to_route('route.name', [title=url], [parameters = {}], [attributes = {}])
-            link_to_route : function (route, title, parameters, attributes) {
-                var url = this.route(route, parameters);
-
-                return getHtmlLink(url, title, attributes);
             }
 
         };
