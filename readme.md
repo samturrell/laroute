@@ -23,7 +23,7 @@ to the array of providers in `config/app.php`:
 
 ## How to use
 
-The readme of the original project ([https://github.com/aaronlord/laroute](aaronlord/laroute)) should provide adequate instructions for use.
+The readme of the original project ((https://github.com/aaronlord/laroute)[aaronlord/laroute]) should provide adequate instructions for use.
 
 The only thing to note is that only the route *name* related methods and data are available.
 
