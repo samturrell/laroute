@@ -88,7 +88,7 @@
                 if (route.substr(0, 1) !== '/') {
                     route = '/' + route;
                 }
-                return route.replace(/\//g, '\\/').replace(/\/\{.*?\?\}/g, '[a-zA-Z0-9-_]+');
+                return route.replace(/\//g, '\\/').replace(/{.*?}/g, '[a-zA-Z0-9-_]+');
             },
 
             currentRoute: function () {
